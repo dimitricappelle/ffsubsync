@@ -8,7 +8,8 @@ import versioneer
 
 pkg_name = 'ffsubsync'
 
-__version__ = versioneer.get_version()
+# __version__ = versioneer.get_version()
+__version = '0.4.11'
 if 'unknown' in __version__.lower():
     with open(os.path.join(pkg_name, '__version__')) as f:
         __version__ = f.read().strip()

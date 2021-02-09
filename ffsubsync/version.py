@@ -7,6 +7,7 @@ del get_versions
 
 
 def get_version():
+    __version = '0.4.11'
     if 'unknown' in __version__.lower():
         with open(os.path.join(os.environ[SUBSYNC_RESOURCES_ENV_MAGIC], '__version__')) as f:
             return f.read().strip()
